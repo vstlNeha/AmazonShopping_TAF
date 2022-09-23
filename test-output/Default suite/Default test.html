@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 27 15:59:27 IST 2021</td>
+<td>Started on:</td><td>Fri Sep 23 15:11:41 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67879 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21067 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.scripts.CartFunctionalityTest.validateAddToCartFunctionality()'><b>validateAddToCartFunctionality</b><br>Test class: com.scripts.CartFunctionalityTest</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=91.0.4472.164)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Next&apos;)]&quot;}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SMUGKE0&apos;, ip: &apos;192.168.43.226&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+System info: host: &apos;DESKTOP-TDKRKOS&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ADMIN$\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 25a7237da682649f5ae013916d317c1d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ADMIN$\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b65f6afaf01281d9f94a16a52817bda
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Next&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -93,53 +95,15 @@ Session ID: 25a7237da682649f5ae013916d317c1d
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:86)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.scripts.CartFunctionalityTest.validateAddToCartFunctionality(CartFunctionalityTest.java:43)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:90)
+	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:84)
+	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:99)
+	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:84)
+	at com.scripts.CartFunctionalityTest.validateAddToCartFunctionality(CartFunctionalityTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -161,17 +125,19 @@ Session ID: 25a7237da682649f5ae013916d317c1d
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2065886345", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2065886345'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=91.0.4472.164)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1238616099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1238616099'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Next&apos;)]&quot;}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SMUGKE0&apos;, ip: &apos;192.168.43.226&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+System info: host: &apos;DESKTOP-TDKRKOS&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ADMIN$\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 25a7237da682649f5ae013916d317c1d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ADMIN$\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b65f6afaf01281d9f94a16a52817bda
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Next&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -182,53 +148,15 @@ Session ID: 25a7237da682649f5ae013916d317c1d
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:86)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:89)
-	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:78)
-	at com.scripts.CartFunctionalityTest.validateAddToCartFunctionality(CartFunctionalityTest.java:43)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:90)
+	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:84)
+	at com.pageFactory.AmazonBasicsPage.clickOnNextPage(AmazonBasicsPage.java:99)
+	at com.pageFactory.AmazonBasicsPage.getListOfProducts(AmazonBasicsPage.java:84)
+	at com.scripts.CartFunctionalityTest.validateAddToCartFunctionality(CartFunctionalityTest.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -250,12 +178,12 @@ Session ID: 25a7237da682649f5ae013916d317c1d
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>44</td>
-<td>com.scripts.CartFunctionalityTest@35851384</td></tr>
+<td>15</td>
+<td>com.scripts.CartFunctionalityTest@2a5ca609</td></tr>
 </table><p>
 </body>
 </html>

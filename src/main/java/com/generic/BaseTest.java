@@ -46,7 +46,7 @@ public class BaseTest {
   }
 
 	//close Browser
-public static void teardown() {
+	public static void teardown() {
 	   driver.close();
 		
 	}

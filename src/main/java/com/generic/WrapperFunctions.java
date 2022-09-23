@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WrapperFunctions {
 
-	//set implicit wait
+			//set implicit wait
 			public void setImplicitWait(int intWait) {
 				try {
 					BaseTest.driver.manage().timeouts().implicitlyWait(intWait,TimeUnit.SECONDS);

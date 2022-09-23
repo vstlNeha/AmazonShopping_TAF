@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.generic.BaseTest;
+import com.generic.Constants;
 import com.pageFactory.AmazonBasicsPage;
 import com.pageFactory.HomePage;
 
@@ -33,10 +34,14 @@ public class CartFunctionalityTest extends BaseTest{
 	
 	@Test
 	public void validateAddToCartFunctionality() {
-		objHomePage.verifyAmazonHomePageIsDisplayed();	
-		objHomePage.verifyAmazonBasicsIsDisplayed();
-		objHomePage.clickOnSeeMoreOfAmazonBasics();
-		objAmazonBasicsPage.verifyAmazonBasicsPageIsDisplayed();
+		
+		objHomePage.verifyAmazonHomePageIsDisplayed();
+		objHomePage.searchAllProduct(Constants.strSearchAmazonBasics);
+		objHomePage.clickOnSearchAllProduct();
+		objHomePage.clickOnAmazonBasicsCheckBox();
+		//objHomePage.verifyAmazonBasicsIsDisplayed();
+	//	objHomePage.clickOnSeeMoreOfAmazonBasics();
+		//objAmazonBasicsPage.verifyAmazonBasicsPageIsDisplayed();
 		objAmazonBasicsPage.verifyFromOurBrandsHeaderIsDisplayed();
 		objAmazonBasicsPage.clickOnOurBrandCheckbox();
 		objAmazonBasicsPage.verifyOurBrandsCheckboxIsSelected();
