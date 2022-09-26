@@ -24,7 +24,7 @@ public class HomePage {
 	
 	//verify amazon basics is displayed
 	public void verifyAmazonBasicsIsDisplayed(){
-		By loc_hdrAmazonBasics = By.xpath("//span[text()='" + "amazon basics" + "']");
+		By loc_hdrAmazonBasics = By.xpath("//span[contains(text(),'AmazonBasics')]");
 		BaseTest.driver.findElement(loc_hdrAmazonBasics).isDisplayed();
 		objWrapperFunctions.scrollToViewElement(loc_hdrAmazonBasics);
 		Assert.assertTrue(BaseTest.driver.findElement(loc_hdrAmazonBasics).isDisplayed(),

@@ -33,15 +33,13 @@ public class CartFunctionalityTest extends BaseTest{
 	*/
 	
 	@Test
-	public void validateAddToCartFunctionality() {
+	public void validateAddToCartFunctionality() throws InterruptedException {
 		
 		objHomePage.verifyAmazonHomePageIsDisplayed();
 		objHomePage.searchAllProduct(Constants.strSearchAmazonBasics);
 		objHomePage.clickOnSearchAllProduct();
 		objHomePage.clickOnAmazonBasicsCheckBox();
-		//objHomePage.verifyAmazonBasicsIsDisplayed();
-	//	objHomePage.clickOnSeeMoreOfAmazonBasics();
-		//objAmazonBasicsPage.verifyAmazonBasicsPageIsDisplayed();
+		objHomePage.verifyAmazonBasicsIsDisplayed();
 		objAmazonBasicsPage.verifyFromOurBrandsHeaderIsDisplayed();
 		objAmazonBasicsPage.clickOnOurBrandCheckbox();
 		objAmazonBasicsPage.verifyOurBrandsCheckboxIsSelected();
